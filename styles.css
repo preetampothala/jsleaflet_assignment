@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  color: #fff;
+  font-weight: 400;
+  line-height: 1.6;
+  height: 100vh;
+  overscroll-behavior-y: none;
+  background-color: #fff;
+  padding: 2.5rem;
+  display: flex;
+}
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.leftsidebar {
+  flex-basis: 50rem;
+  background-color: rgb(25 69 135);
+  padding: 3rem 5rem 4rem 5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#map {
+  flex: 1;
+  height: 100%;
+}
+.workout {
+  background-color: rgb(51, 94, 157);
+  border-radius: 5px;
+  padding: 1.5rem 2.25rem;
+  margin-bottom: 1.75rem;
+  cursor: pointer;
+}
+/* rgb(25 69 135) */
+.wd {
+  flex: 1;
+}
+.workouts {
+  list-style: none;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.workout-running {
+  border-left: 5px solid rgb(209, 232, 126);
+}
+.workout-cycling {
+  border-left: 5px solid green;
+}
+
+.workout-title {
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.workout-details {
+  display: flex;
+  align-items: baseline;
+}
+
+.workout-icon {
+  font-size: 1.8rem;
+  margin-right: 0.2rem;
+  height: 0.28rem;
+}
+
+.workout-value {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.workout-unit {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.form {
+  background-color: rgb(51, 94, 157);
+  border-radius: 5px;
+  padding: 1.5rem 2.75rem;
+  margin-bottom: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  height: 9.25rem;
+  transition: all 0.5s, transform 1ms;
+}
+
+.form.hidden {
+  transform: translateY(-30rem);
+  height: 0;
+  padding: 0 2.25rem;
+  margin-bottom: 0;
+  opacity: 0;
+}
+.formr {
+  display: flex;
+  flex: 50%;
+}
+.form-row {
+  display: flex;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+.form-row-hidden {
+  display: none;
+}
+
+.form-label {
+  flex: 0 0 50%;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.3rem 1.1rem;
+  font-family: inherit;
+  font-size: 1.4rem;
+  border: none;
+  border-radius: 3px;
+  transition: all 0.2s;
+}
+
+.form-input:focus {
+  outline: none;
+  background-color: #fff;
+}
+
+.form-btn {
+  display: none;
+}
+.leaflet-popup .leaflet-popup-content-wrapper {
+  background-color: rgb(51, 94, 157);
+  color: #fff;
+  border-radius: 5px;
+  padding-right: 0.6rem;
+  width: 250px;
+}
+
+.leaflet-popup .leaflet-popup-content {
+  font-size: 1.3rem;
+}
+
+.leaflet-popup .leaflet-popup-tip {
+  background-color: rgb(51, 94, 157);
+}
+.leaflet-container a.leaflet-popup-close-button {
+  color: #fff;
+}
+.leaflet-popup-close-button:hover {
+  color: #fff;
+}
+
+.running-popup .leaflet-popup-content-wrapper {
+  border-left: 5px solid rgb(209, 232, 126);
+}
+.cycling-popup .leaflet-popup-content-wrapper {
+  border-left: 5px solid rgb(73, 215, 73);
+}
